@@ -1,0 +1,14 @@
+# -- Introductions --
+# What is javascript
+# Chrome console
+# Variables (integers and strings and booleans) - alert all the thigns
+# Expressions (simple operations)
+#
+# -- Move everything from the console to a page --
+# Start drawing on the page
+# Loops (drawing)
+# Conditionals
+# Functions
+# Functions as values
+# Objects
+

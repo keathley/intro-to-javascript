@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="processing.js"></script>
+  </head>
+  <body>
+    <script type="text/processing" data-processing-target="processing-canvas">
+      var radius = 50;
+      var X, Y;
+      var nX, nY;
+      var delay = 16;
+
+      void setup() {
+        size(200, 200);
+        strokeWeight(10);
+        frameRate(15);
+        X = width / 2;
+        Y = height / 2;
+        nX = X;
+        nY = Y;
+      }
+
+      void draw() {
+        radius = radius + sin(frameCount / 4);
+
+        X += (nX - X) / delay;
+        Y += (nY - Y) / delay;
+
+        background(100);
+
+        fill(0, 121, 184);
+
+        stroke(255);
+
+        ellipse( X, Y, radius, radius );
+      }
+
+      void mouseMoved() {
+        nX = mouseX;
+        nY = mouseY;
+      }
+    </script>
+    <canvas id="processing-canvas"></canvas>
+  </body>
+</html>
+
