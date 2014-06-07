@@ -15,6 +15,7 @@ Notes for an introduction to javascript class.
 * Conditionals
 * Functions
 * -- Stuff if we have time --
+* jQuery and changing things on the page
 * Functions as values
 * Objects
 
